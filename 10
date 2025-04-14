@@ -7,4 +7,4 @@ def ladders(n, last_block):
             + ladders(n, last_block - 1))
 
 n = int(input())
-print(ladders(n, n - 1))
+print(ladders(n, n))
