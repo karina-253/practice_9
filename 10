@@ -1,1 +1,10 @@
+def ladders(n, last_block):
+    if n == 0:
+        return 1
+    if n < 0 or last_block == 0:
+        return 0
+    return (ladders(n - last_block, last_block - 1)
+            + ladders(n, last_block - 1))
 
+n = int(input())
+print(ladders(n, n - 1))
