@@ -1,1 +1,14 @@
-
+run = []
+g4 = str()
+for g in range (100000,999999):
+    N=g
+    g1=str(g)[1:]
+    g2=N+1
+    g2_=str(g2)[1:]
+    g3=N+2
+    g3_=str(g3)[1:][:-1]
+    g4=N+3
+    g4_=str(g4)
+    if g1==g1[::-1] and g2_==g2_[::-1] and g3_==g3_[::-1] and g4_==g4_[::-1]:
+        run.append(N)
+print (run)
